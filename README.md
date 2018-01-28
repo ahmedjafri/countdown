@@ -1,4 +1,4 @@
-jQuery Countdown Clock
+Zainab Interview Countdown
 =========
 
 jQuery countdown plugin that accounts for timezone.
