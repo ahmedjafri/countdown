@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Countdown to Zainab's Interview</title>
+	<link type="text/css" href="jquery.countdown.css?v=1.0.0" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.countdown.min.js?v=1.0.0"></script>
+</head>
+<body>
+	<div class="source"><h1 style="padding: 0.6em 0em;">Zainab's Interview</h1></div>
+	<ul id="counter">
+		<li><span class="days">00</span><p class="days_text">Days</p></li>
+		<li class="seperator">:</li>
+		<li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+		<li class="seperator">:</li>
+		<li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+		<li class="seperator">:</li>
+		<li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+	</ul>
+
+	<script type="text/javascript">
+		var interviewDate = new Date('Feburary 1, 2018 12:00:00')
+
+		$('#counter').countdown({
+			date: interviewDate, 
+			offset: +5, // Pakistan Time Zone 
+			day: 'Day',
+			days: 'Days'
+		}, function () {
+			alert('Done!');
+		});
+	</script>
+</body>
+</html>
